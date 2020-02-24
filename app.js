@@ -10,7 +10,7 @@ dotenv.config();
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
-    res.sendFile(__dirname + "/index.html")
+    res.sendFile(__dirname + "/index.html");
 });
 
 app.post("/", function(req, res){
@@ -34,7 +34,7 @@ app.post("/", function(req, res){
             res.send();
         });
     });
-});
+})
 
 
 app.listen(process.env.PORT || 5000, function() {
