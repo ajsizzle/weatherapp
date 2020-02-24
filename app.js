@@ -34,7 +34,7 @@ app.post("/", function(req, res){
             res.send();
         });
     });
-})
+});
 
 
 app.listen(process.env.PORT || 5000, function() {
